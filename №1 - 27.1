@@ -1,0 +1,5 @@
+# Задание_2: Запускаем скрипт ниже. После, проверяем по адресу http://127.0.0.1:8081/ работу сервера.
+docker run --name dz_27.1_2 -it -p 8081:8081 python bash -c "pip install django && django-admin startproject app && cd app && ./manage.py runserver 0.0.0.0:8081"
+
+# Задание_3: Запускаем скрипт ниже. Вместо "-v C:\skypro\module_8_docker\dx_27-1_#1" - указываем свой путь
+docker run --name dz_27.1_3 -it -p 5433:5432 -v C:\skypro\module_8_docker\dx_27-1_#1:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres
